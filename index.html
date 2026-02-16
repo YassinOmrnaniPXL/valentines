@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelukkige (late) Valentijnsdag - Chemske</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing" class="page active">
+        <div class="decorative-elements">
+            <div class="sun">☀️</div>
+            <div class="star star-1">⭐</div>
+            <div class="star star-2">✨</div>
+            <div class="star star-3">💫</div>
+            <div class="star star-4">🌟</div>
+            <div class="flower flower-1">🌸</div>
+            <div class="flower flower-2">🌺</div>
+            <div class="flower flower-3">🌻</div>
+            <div class="flower flower-4">🌷</div>
+            <div class="flower flower-5">🌼</div>
+            <div class="flower flower-6">🌹</div>
+        </div>
+        <div class="landing-content">
+            <h1 class="main-title">Gelukkige (late) Valentijnsdag</h1>
+            <h2 class="static-name">Mijn liefste Chemske 💕</h2>
+            <button id="startBtn" class="start-button">Ontdek onze liefde</button>
+        </div>
+    </section>
+
+    <!-- Timeline Page -->
+    <section id="timeline" class="page">
+        <div class="page-content">
+            <h2 class="section-title">Tijdlijn van onze liefde</h2>
+            <div class="timeline-container" id="timelineContainer">
+                <!-- Timeline items will be populated by JavaScript -->
+            </div>
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" onclick="changePage('landing')">← Terug</button>
+                <button class="nav-btn next-btn" onclick="changePage('photos')">Volgende →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photos Page -->
+    <section id="photos" class="page">
+        <div class="page-content">
+            <h2 class="section-title">Onze favoriete foto's</h2>
+            <p class="page-subtitle">Herinneringen met mijn mooie liefieke 💖</p>
+            <div class="photos-container" id="photosContainer">
+                <!-- Photos will be populated by JavaScript -->
+            </div>
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" onclick="changePage('timeline')">← Terug</button>
+                <button class="nav-btn next-btn" onclick="changePage('message')">Volgende →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Page -->
+    <section id="message" class="page">
+        <div class="page-content">
+            <h2 class="section-title">Een bericht van mij</h2>
+            <p class="page-subtitle">Voor mijn geweldige Chemsieke 💝</p>
+            <div class="message-container">
+                <div class="message-card" id="messageCard">
+                    <!-- Message will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" onclick="changePage('photos')">← Terug</button>
+                <button class="nav-btn next-btn" onclick="changePage('bouquet')">Volgende →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rose Bouquet Page -->
+    <section id="bouquet" class="page">
+        <div class="page-content">
+            <h2 class="section-title">Een digitaal boeket rozen</h2>
+            <p class="page-subtitle">Klik op elke roos, mijn liefste Chemske 💗</p>
+            <p class="bouquet-instruction">Klik op elke roos om een speciaal bericht te zien</p>
+            <div class="bouquet-wrapper">
+                <div class="roses-container" id="rosesContainer">
+                    <!-- Roses will be populated by JavaScript -->
+                </div>
+            </div>
+            <div id="roseMessage" class="rose-message"></div>
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" onclick="changePage('message')">← Terug</button>
+                <button class="nav-btn next-btn" onclick="changePage('landing')">Opnieuw beginnen 💕</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
